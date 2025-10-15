@@ -4,13 +4,12 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 w-full bg-black text-white shadow-md z-50">
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-        <div className="flex items-center gap-3">
+        {/* Logo */}
+        <div className="flex items-center">
           <img src={logo} alt="Abeja Real" className="h-12 w-auto" />
-          <span className="text-xl font-bold tracking-wide text-yellow-400">
-            Abeja Real
-          </span>
         </div>
 
+        {/* Menú desplegable */}
         <select
           onChange={(e) =>
             e.target.value && (window.location.href = e.target.value)
